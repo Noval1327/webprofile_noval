@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <p href="">Web Profile</p>
+      <ul>
+        <a href="#">
+          <li>Home</li>
+        </a>
+        <a href="#aboutMe">
+          <li>About Me</li>
+        </a>
+        <a href="#containt-skill">
+          <li>My Skill</li>
+        </a>
+      </ul>
+      <a>Contact</a>
+    </div>
+    <div class="container">
+      <div class="bio">
+        <p>
+          Halo !<br />
+          Saya Mochammad Nouval Saputra
+        </p>
+        <p>seorang mahasiswa semester 7 yang tertarik menjadi web developer</p>
+        <p>Berikut ini adalah Web Profile saya</p>
+        <div class="button-container">
+          <button>Skill</button>
+          <button>Contact Me</button>
+        </div>
+      </div>
+      <div class="imag">
+        <img class="img-rounded" src="Asset/fotoganteng2.jpg" alt=""
+        height=300px" />
+      </div>
+      <h3>My Skill</h3>
+      <div class="content">
+        <div class="contain-skill" id="contain-skill">
+          <div class="skillCard-1">
+            <img src="Asset/css-3.png" alt="" width="150px" />
+            <p>CSS 3</p>
+          </div>
+          <div class="skillCard-2">
+            <img src="Asset/bootstrap.png" alt="" width="150px" />
+            <p>bootstrap 5</p>
+          </div>
+          <div class="skillCard-3">
+            <img src="Asset/js.png" alt="" width="150px" />
+            <p>Javascript</p>
+          </div>
+        </div>
+      </div>
+      <h2>Contact Me</h2>
+      <div class="container-form">
+        <form>
+          <label for="fname">Nama</label>
+          <input type="text" id="fname" name="firstname" placeholder="Nama" />
+
+          <label for="Email">Email</label>
+          <input type="text" id="Email" name="Email" placeholder="Email Anda" />
+          <label for="pesan">Pesan</label>
+          <textarea
+            id="pesan"
+            name="pesan"
+            placeholder="Tulis Pesan Anda Disini"
+            style="height: 200px"
+          ></textarea>
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

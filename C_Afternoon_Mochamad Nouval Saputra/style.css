@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+@font-face {
+  font-family: "altone";
+  src: url(AltoneTrial-Bold.ttf);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  -webkit-box-shadow: -1px 11px 5px 0px rgba(212,212,212,1);
+  -moz-box-shadow: -1px 11px 5px 0px rgba(212,212,212,1);
+  box-shadow: -1px 11px 5px 0px rgba(212,212,212,1);
+  font-weight: 600;
+}
+
+.navbar ul{
+display: flex;
+}
+
+.navbar ul li {
+list-style: none;
+margin-right: 1rem;
+}
+
+.container {
+  margin: 100px;
+  margin-top: 100px;
+  display: grid;
+  grid-template-areas: 
+  'bio imag'
+  'contain contain'
+  'form form'
+
+  ;
+}
+
+.bio {
+  grid-area: bio;
+  min-height: 350px;
+  font-family: 'altone',sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  /* border: 1px solid black; */
+}
+.bio p {
+  font-family: 'altone',sans-serif;
+
+}
+
+.bio p:nth-child(2){
+  margin-top: 25px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  letter-spacing: px;
+
+}
+.bio p:nth-child(3){
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.imag {
+  grid-area: imag;
+}
+
+a{
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+.img-rounded {
+  display: block;
+  max-width: 300px;
+  height: auto;
+  border-radius: 50% 0% 50% 50%;
+}
+
+.button-container{
+  display: flex;
+  padding-top: 20px;
+}
+
+
+button{
+  cursor: pointer;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  height: 3rem;
+  margin-right: 20px;
+  width: 7rem;
+  background-color: #177ECD;
+  color: white;
+}
+
+button:hover{
+  background-color: #146eb3;
+}
+
+h3{
+  position: relative;
+  top: -890px;
+  margin-left: 500px;
+  font-family: 'altone',sans-serif;
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.content{
+  background-color: #177ECD;
+  width: 100%;
+  grid-area: contain;
+  margin-top: 70px;
+}
+
+.contain-skill{
+  display: flex;
+  grid-area: contain;
+  margin-top: 30px;
+  gap: 20px;
+  justify-content: center;
+}
+
+.skillCard-1{
+  height: 200px;
+  width: 200px;
+  background-color: antiquewhite;
+  background-color: #177ECD;
+  font-family: 'altone', sans-serif;
+  text-align: center;
+}
+.skillCard-2{
+  height: 200px;
+  width: 200px;
+  background-color: #177ECD;
+  font-family: 'altone', sans-serif;
+  text-align: center;
+
+}
+.skillCard-3{
+  height: 200px;
+  width: 200px;
+  background-color: #177ECD;
+  font-family: 'altone', sans-serif;
+  text-align: center;
+}
+
+.contain-skill p {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-weight: 500;
+}
+
+h2 {
+  margin-left: -300px;
+  margin-top: -580px;
+  z-index: 2;
+  margin-bottom: 30px;
+  font-family: 'altone',sans-serif;
+  font-size: 35px;
+  font-weight: 500;
+}
+
+
+/* form-contact */
+input[type="text"],select, textarea {
+      
+      width: 100%; 
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px; 
+      box-sizing: border-box;
+      margin-top: 6px; 
+      margin-bottom: 16px;
+    }
+
+    
+    input[type="submit"] {
+      background-color: #177ECD;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    
+    input[type="submit"]:hover {
+      background-color: #2878b6;
+    }
+
+
+    .container-form {
+      grid-area: form;  
+      margin-top: 80px;
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
